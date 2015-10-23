@@ -166,6 +166,15 @@ IGL_INLINE bool igl::boundary_conditions(
   {
     return true;
   }
+  
+  // if there's only one bone
+  if(bc.cols() == 1)
+  {
+    // If there is only one weight function,
+    // then we expect that there is only one handle.
+    assert(P.rows() + BE.rows() == 1);
+    return true;
+  }
 
   // Check that every Weight function has at least one boundary value of 1 and
   // one value of 0
