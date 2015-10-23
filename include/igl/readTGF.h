@@ -19,14 +19,14 @@ namespace igl
 {
   // READTGF
   //
-  // [V,E,P,BE,CE,PE] = readTGF(filename)
+  // [C,E,P,BE,CE,PE] = readTGF(filename)
   //
   // Read a graph from a .tgf file
   //
   // Input:
   //  filename  .tgf file name
   // Ouput:
-  //  V  # vertices by 3 list of vertex positions
+  //  C  # vertices by 3 list of vertex positions
   //  E  # edges by 2 list of edge indices
   //  P  # point-handles list of point handle indices
   //  BE # bone-edges by 2 list of bone-edge indices
